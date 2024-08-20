@@ -5,7 +5,7 @@ Play Secret Santa in a dynamic and secure way, as the portal was developed using
 #### Feel free to explore, and if you have any questions, I'm available 24/7 for you 🫵
 
 <div>
-    <img src=''/>
+    <img src='./public/Img/sorteadorDeAmigos.gif'/>
 </div>
 
 #### Link to the Website 🎯
