@@ -3,14 +3,12 @@ import { secretFriendResult } from "../atom";
 import { conductDraw } from "../helpers/conductDraw";
 import { useParticipantsList } from "./useParticipantsList";
 
-export const Drawer = () => {
+export const useDrawer = () => {
   const participants = useParticipantsList();
-
   const setResult = useSetRecoilState(secretFriendResult);
 
   return () => {
     const result = conductDraw(participants);
-
     setResult(result);
   };
 };

@@ -10,6 +10,13 @@ jest.mock("../state/hooks/useParticipantsList", () => {
 });
 
 const mockNavigate = jest.fn();
+const mockDraw = jest.fn();
+
+jest.mock("../state/hooks/useDrawer", () => {
+  return {
+    useNavigate: () => mockDraw,
+  };
+});
 
 jest.mock("react-router-dom", () => {
   return {
@@ -65,5 +72,6 @@ describe("There are enough participants", () => {
 
     expect(mockNavigate).toHaveBeenCalledTimes(1);
     expect(mockNavigate).toHaveBeenCalledWith("/draw");
+    expect(mockDraw).toHaveBeenCalledTimes(1);
   });
 });

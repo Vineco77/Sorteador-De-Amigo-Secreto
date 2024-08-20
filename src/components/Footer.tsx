@@ -2,13 +2,17 @@ import { useNavigate } from "react-router-dom";
 import { useParticipantsList } from "../state/hooks/useParticipantsList";
 
 import "./Footer.css";
+import { useDrawer } from "../state/hooks/useDrawer";
 
 const Footer = () => {
   const participants = useParticipantsList();
 
   const navigateTo = useNavigate();
 
+  const toDraw = useDrawer();
+
   const start = () => {
+    toDraw();
     navigateTo("/draw");
   };
 
