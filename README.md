@@ -11,7 +11,7 @@ Play Secret Santa in a dynamic and secure way, as the portal was developed using
 #### Link to the Website 🎯
 
 <div>
-    <a href="" target="_blank"><img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white" target="_blank"></a>
+    <a href="https://sorteador-de-amigo-secreto-theta.vercel.app" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white" target="_blank"></a>
 </div>
 
 #### ⬇️You can reach me at⬇️

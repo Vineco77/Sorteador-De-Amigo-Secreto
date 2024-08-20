@@ -7,16 +7,17 @@ import "./Draw.css";
 
 const Draw = () => {
   const participants = useParticipantsList();
-
   const [participantOfTheTime, setParticipantOfTheTime] = useState("");
-  const [secretFriend, setSecretFriend] = useState("");
-
+  let [secretFriend, setSecretFriend] = useState("");
   const result = useDrawResult();
-
   const toDraw = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (result.has(participantOfTheTime)) {
       setSecretFriend(result.get(participantOfTheTime)!);
+      // Add Timeout to clear secretFriend after using
+      setTimeout(() => {
+        setSecretFriend("");
+      }, 5000);
     }
   };
 

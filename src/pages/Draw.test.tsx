@@ -4,6 +4,7 @@ import { RecoilRoot } from "recoil";
 import { useParticipantsList } from "../state/hooks/useParticipantsList";
 import Draw from "./Draw";
 import { useDrawResult } from "../state/hooks/useDrawResult";
+import { act } from "react-dom/test-utils";
 
 jest.mock("../state/hooks/useParticipantsList", () => {
   return {
@@ -65,5 +66,33 @@ describe("The Draws Page", () => {
     const secretFriend = screen.getByRole("alert");
 
     expect(secretFriend).toBeInTheDocument();
+  });
+  test("Hide the friend's secret name after 5 seconds", () => {
+    jest.useFakeTimers();
+
+    render(
+      <RecoilRoot>
+        <Draw />
+      </RecoilRoot>
+    );
+
+    const select = screen.getByPlaceholderText("Selecione o seu nome");
+    fireEvent.change(select, {
+      target: {
+        value: participants[0],
+      },
+    });
+
+    const button = screen.getByRole("button");
+    fireEvent.click(button);
+
+    let secretFriend = screen.queryByRole("alert");
+
+    expect(secretFriend).toBeInTheDocument();
+
+    act(() => {
+      jest.runAllTimers();
+    });
+    expect(secretFriend).not.toBeInTheDocument();
   });
 });
