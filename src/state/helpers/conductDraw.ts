@@ -3,7 +3,6 @@ import shuffle from "just-shuffle";
 export function conductDraw(participants: string[]) {
   const participantsTotal = participants.length;
   const shuffled = shuffle(participants);
-
   const result = new Map<string, string>();
 
   for (let i = 0; i < participantsTotal; i++) {

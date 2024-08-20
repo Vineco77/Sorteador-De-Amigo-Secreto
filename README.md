@@ -1,46 +1,82 @@
-# Getting Started with Create React App
+# Secret Santa 🎅
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Play Secret Santa in a dynamic and secure way, as the portal was developed using TDD.
 
-## Available Scripts
+#### Feel free to explore, and if you have any questions, I'm available 24/7 for you 🫵
 
-In the project directory, you can run:
+<div>
+    <img src=''/>
+</div>
 
-### `npm start`
+#### Link to the Website 🎯
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<div>
+    <a href="" target="_blank"><img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white" target="_blank"></a>
+</div>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### ⬇️You can reach me at⬇️
 
-### `npm test`
+<div> 
+    <a href="https://www.linkedin.com/in/vinicius-ribeiro-4690741ba/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+    <a href="https://wa.me/5511943232223" target="_blank"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" target="_blank"></a>
+    <a href="www.youtube.com/@Devdebotas" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank"></a>
+    <a href="vinii.viniciusribeiro@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a> 
+    <h2>vinii.viniciusribeiro@gmail.com</h2>
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Technologies used in this project 🤖
 
-### `npm run build`
+[![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)](#)
+[![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)](#)
+[![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](#)
+[![JSON](https://img.shields.io/badge/json%20web%20tokens-323330?style=for-the-badge&logo=json-web-tokens&logoColor=pink)](#)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](#)
+[![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](#)
+[![Jest](https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white)](#)
+[![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](#)
+[![GIT](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)](#)
+[![VScode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](#)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Knowledge Gained During the Process🤓
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Ran the script that executes the implemented tests;
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Found elements on the screen using @testing-library/react;
 
-### `npm run eject`
+- Analyzed the test script output;
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Differentiated between the types of tests available;
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Developed a component using TDD;
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Installed the necessary libraries to manage routes and state;
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Created a hook that encapsulates access to the global state of participants;
 
-## Learn More
+- Used useRef to interact with the DOM and set focus on an input;
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Executed asynchronous code with setTimeout;
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Handled timers in tests using Jest;
+
+- Prepared a mock for a custom hook;
+
+- Validated whether methods were called by the tested component;
+
+- Handled navigation with React Router DOM during tests;
+
+- Performed snapshot tests;
+
+- Located <option> elements by role;
+
+- Tested whether the application's flow is executing as expected;
+
+- Refactored code to facilitate test writing;
+
+- Wrote accessible HTML using the concept of roles;
+
+- Uploaded the project to GitHub;
+
+- Configured deployment on Vercel;
+
+- Ran tests to avoid publishing versions with failing tests.

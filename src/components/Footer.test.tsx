@@ -1,4 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react";
+import React from "react";
 import { RecoilRoot } from "recoil";
 import { useParticipantsList } from "../state/hooks/useParticipantsList";
 import Footer from "./Footer";
@@ -14,7 +15,7 @@ const mockDraw = jest.fn();
 
 jest.mock("../state/hooks/useDrawer", () => {
   return {
-    useNavigate: () => mockDraw,
+    useDrawer: () => mockDraw,
   };
 });
 
